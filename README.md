@@ -1,91 +1,83 @@
-Open Syobon Action
-==================
-###### Original game developer: Chiku (ちく)
-###### Open-source port developer: Mathew Velasquez
-###### Developer/maintainer of this fork: Karen／明美 (@angelXwind)
-#### [English] [[日本語]](README_ja.md)
+📘 Open Syobon Action
 
-Open Syobon Action (オープンしょぼんのアクション) is an open-source cross-platform port of the unforgiving Japanese platformer using SDL.
+Original developer: Chiku (ちく) → Chiku
 
-It is also called "Shobon no Action," "Neko Mario," "Cat Mario," or "Cat MeOUCHio."
+Open-source port developer: Mathew Velasquez
 
-Notes
------
-* Rather than just playing this game by yourself, it is much more enjoyable to let someone who's never tried it before try playing the game.
-* Those who are under 12 years old are not allowed to play.
-* Please be aware that by playing this game, there is a possibility that you may develop trust issues towards other humans.
-* Please be aware that there is a possibility of getting stressed out while playing this game.
-* If any problems are caused by this game, please understand that the developers cannot take any responsibility.
-* If you wish to distribute this game to a large amount of people, please give credit to the original developer, Chiku (ちく).
-* The game's text is entirely in Japanese, but you do not need to understand the Japanese language in order to play.
+Current maintainer (this fork): laredding2
 
-Controls (Keyboard)
--------------------
-* Left/Right: Move
-* Z or Up: Jump
-* Space: Double-speed
-* 0 (while in-game): Self-destruction
-* Escape: Exit
-* F1: Return to title screen
-* 1-9 (while at the title screen): Select level
-* 0 at the title screen: Mystery Dungeon (there is a possibility that some bugs may occur)
+Game title in Japanese: オープンしょぼんのアクション → Open Syobon Action
 
-Bugs
-----
-Please report any bugs at the GitHub issue tracker: https://github.com/angelXwind/OpenSyobonAction/issues
+Also known as: Shobon no Action, Neko Mario, Cat Mario, Cat MeOUCHio
 
-Command Line Arguments
-----------------------
-`-nosound` - Disables sound
+Built using SDL for cross-platform support.
 
-Dependencies
-------------
-* SDL
-* SDL_image
-* SDL_mixer
-* SDL_ttf
-* SDL_gfx
+⚠️ Notes
+Best enjoyed by letting newcomers play and watching their reactions.
 
-Gamepad Notes
--------------
-Your gamepad or joystick may not work by default with Open Syobon Action. Check joyconfig.h for more information.
+Not suitable for children under 12.
 
-Unimplemented
--------------
-* Font thickness (Not really important)
-* Port to other operating systems (OS X, iOS, Android, etc.)
+May cause trust issues or stress while playing.
 
-Release Changelog
------------------
-**Open Syobon Action RC 3**
-* Fixed audio on Windows 7 and above
+Developers take no responsibility for problems caused by the game.
 
-**Open Syobon Action RC 2**
-* First Windows release!
-* Dvorak keyboard support
-* Error messages more detailed and directed to stdout
-* Compiled code optimized for speed
-* Better initialization and de-initialization code, so you can be confident
- that all resources are freed.
-* Optional sound: The game will no longer crash if there is no audio device
- available, and all sound can be disabled with the -nosound parameter
-* Minor bugfixes here and there
+If distributing widely, credit the original developer Chiku (ちく).
 
-**Open Syobon Action RC 1**
-* Fixed incorrect "box" rendering (used to draw green pipes)
-* Fixed random crashing at certain parts (thanks to mekuso for the bug report)
-* Volumes now appropriately altered
-* Gamepad support added
-* Now uses original indexed PNGs, with original filenames (capital PNG)
-* Minor tweaks and optimizations
+Game text is entirely in Japanese, but language knowledge is not required to play.
 
-**Open Syobon Action v0.9:**
-* Fixed incorrect character rendering, uses font very similar to the original game
- (sazanami-gothic.ttf rather than msgothic.ttf)
-* Changed encoding of the original readme and source code to UTF-8, so they can
- be viewed correctly with most software
-* Changed DOS newlines to Unix newlines in source and readme
-* Source code has been cleaned up with "indent", removed a few obsolete comments
+🎮 Controls (Keyboard)
+Left/Right: Move
 
-**Open Syobon Action v0.8:**
-* First release
+Z or Up: Jump
+
+Space: Double-speed
+
+0 (in-game): Self-destruction
+
+Escape: Exit
+
+F1: Return to title screen
+
+1–9 (title screen): Select level
+
+0 (title screen): Mystery Dungeon (may contain bugs)
+
+🐞 Bugs
+Report issues at GitHub: Issue Tracker
+
+⚙️ Command Line Arguments
+-nosound → Disable sound
+
+📦 Dependencies
+SDL
+
+SDL_image
+
+SDL_mixer
+
+SDL_ttf
+
+SDL_gfx
+
+🎮 Gamepad Notes
+Gamepads/joysticks may not work by default.
+
+Check joyconfig.h for setup details.
+
+🚧 Unimplemented Features
+Font thickness adjustment
+
+Ports to other OS (macOS, iOS, Android, etc.)
+
+📝 Release Changelog
+RC 4: ?
+
+RC 3: Fixed audio on Windows 7+
+
+RC 2: First Windows release, Dvorak support, detailed error messages, speed optimizations, better resource handling, optional sound (-nosound), minor bugfixes
+
+RC 1: Fixed pipe rendering, random crashes, volume handling, added gamepad support, restored original PNGs, minor tweaks
+
+v0.9: Fixed character rendering (new font), UTF-8 encoding, Unix newlines, cleaned source code
+
+v0.8: First release
